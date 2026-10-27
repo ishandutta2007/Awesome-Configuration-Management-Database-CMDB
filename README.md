@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Configuration-Management-Database-CMDB/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Configuration-Management-Database-CMDB?style=flat-square&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Configuration-Management-Database-CMDB/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Configuration-Management-Database-CMDB?style=flat-square&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Configuration-Management-Database-CMDB/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Configuration-Management-Database-CMDB?style=flat-square&color=blue" alt="GitHub Forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Configuration-Management-Database-CMDB/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Configuration-Management-Database-CMDB/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs Welcome"/></a>
@@ -71,59 +71,59 @@ Below is the verified breakdown of the industry's category leaders, **sorted des
 
 Self-hosted, open-source configuration databases allow engineering teams to maintain full ownership of infrastructure data without per-seat or per-node subscription lock-in. 
 
-The entries below are **sorted descending by GitHub Star Count**, with direct links to each repository's stargazers page:
+The entries below are **sorted descending by GitHub Stars_Count**, with direct links to each repository's stargazers page:
 
-### 1. [NetBox](https://github.com/netbox-community/netbox) [![GitHub stars](https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white)](https://github.com/netbox-community/netbox/stargazers)
+### 1. [NetBox](https://github.com/netbox-community/netbox) [![GitHub_Stars](https://img.shields.io/github/stars/netbox-community/netbox?style=social&color=white)](https://github.com/netbox-community/netbox/stargazers)
 - **Primary Domain**: Network Source of Truth, DCIM, IPAM & Network CMDB.
 - **License**: Apache 2.0 | **Tech Stack**: Python, Django, PostgreSQL, Redis.
 - **Key Capabilities**: The industry standard for network infrastructure modeling. Defines sites, racks, physical device bays, cabling paths, IP allocations, VLANs, VRFs, and virtualized workloads. Powers automated network configuration generation and event-driven webhooks.
 
-### 2. [Snipe-IT](https://github.com/snipe/snipe-it) [![GitHub stars](https://img.shields.io/github/stars/snipe/snipe-it?style=social&color=white)](https://github.com/snipe/snipe-it/stargazers)
+### 2. [Snipe-IT](https://github.com/snipe/snipe-it) [![GitHub_Stars](https://img.shields.io/github/stars/snipe/snipe-it?style=social&color=white)](https://github.com/snipe/snipe-it/stargazers)
 - **Primary Domain**: IT Asset Management (ITAM) & Configuration Item Lifecycle.
 - **License**: AGPL-3.0 | **Tech Stack**: PHP, Laravel, MySQL.
 - **Key Capabilities**: Manages physical enterprise hardware, software licenses, accessories, and user assignments. Features QR/barcode generation, asset auditing workflows, LDAP/SAML synchronization, Slack/Teams notifications, and a comprehensive REST API.
 
-### 3. [GLPI](https://github.com/glpi-project/glpi) [![GitHub stars](https://img.shields.io/github/stars/glpi-project/glpi?style=social&color=white)](https://github.com/glpi-project/glpi/stargazers)
+### 3. [GLPI](https://github.com/glpi-project/glpi) [![GitHub_Stars](https://img.shields.io/github/stars/glpi-project/glpi?style=social&color=white)](https://github.com/glpi-project/glpi/stargazers)
 - **Primary Domain**: ITSM, ITIL Service Desk & Comprehensive CMDB.
 - **License**: GPL-3.0 | **Tech Stack**: PHP, MariaDB, JavaScript.
 - **Key Capabilities**: Complete open-source ITIL management suite with an integrated CMDB. Connects to the native GLPI Inventory Agent for automated cross-platform hardware/software discovery, financial depreciation calculations, network topology visualization, and helpdesk ticket linking.
 
-### 4. [BlueKing CMDB (BK-CMDB)](https://github.com/TencentBlueKing/bk-cmdb) [![GitHub stars](https://img.shields.io/github/stars/TencentBlueKing/bk-cmdb?style=social&color=white)](https://github.com/TencentBlueKing/bk-cmdb/stargazers)
+### 4. [BlueKing CMDB (BK-CMDB)](https://github.com/TencentBlueKing/bk-cmdb) [![GitHub_Stars](https://img.shields.io/github/stars/TencentBlueKing/bk-cmdb?style=social&color=white)](https://github.com/TencentBlueKing/bk-cmdb/stargazers)
 - **Primary Domain**: Hyperscale Enterprise Configuration Platform.
 - **License**: MIT | **Tech Stack**: Go, MongoDB, Redis, Vue.js.
 - **Key Capabilities**: Tencent's open-source enterprise configuration platform built to manage millions of concurrent CIs across complex hybrid clouds. Features dynamic topological service modeling, customizable schema definition without code changes, multi-tenant isolation, and high-concurrency event publishing.
 
-### 5. [Ralph](https://github.com/allegro/ralph) [![GitHub stars](https://img.shields.io/github/stars/allegro/ralph?style=social&color=white)](https://github.com/allegro/ralph/stargazers)
+### 5. [Ralph](https://github.com/allegro/ralph) [![GitHub_Stars](https://img.shields.io/github/stars/allegro/ralph?style=social&color=white)](https://github.com/allegro/ralph/stargazers)
 - **Primary Domain**: Datacenter Asset Management & Hardware CMDB.
 - **License**: Apache 2.0 | **Tech Stack**: Python 3, Django, MySQL.
 - **Key Capabilities**: Developed by Allegro to manage massive datacenter infrastructure and enterprise back-office assets. Includes visual server rack layouts (42U/48U), power distribution unit (PDU) mapping, asset transition workflows, license compliance, and RESTful automation APIs.
 
-### 6. [veops CMDB](https://github.com/veops/cmdb) [![GitHub stars](https://img.shields.io/github/stars/veops/cmdb?style=social&color=white)](https://github.com/veops/cmdb/stargazers)
+### 6. [veops CMDB](https://github.com/veops/cmdb) [![GitHub_Stars](https://img.shields.io/github/stars/veops/cmdb?style=social&color=white)](https://github.com/veops/cmdb/stargazers)
 - **Primary Domain**: Cloud Resource Management & Configuration Auditing.
 - **License**: GPL-3.0 | **Tech Stack**: Python, Django, Vue.js.
 - **Key Capabilities**: Modular IT resource management system tailored for DevOps environments. Features automatic synchronization with AWS, Alibaba Cloud, and Tencent Cloud, CI attribute version control, automated change auditing, and fine-grained RBAC permission trees.
 
-### 7. [Nautobot](https://github.com/nautobot/nautobot) [![GitHub stars](https://img.shields.io/github/stars/nautobot/nautobot?style=social&color=white)](https://github.com/nautobot/nautobot/stargazers)
+### 7. [Nautobot](https://github.com/nautobot/nautobot) [![GitHub_Stars](https://img.shields.io/github/stars/nautobot/nautobot?style=social&color=white)](https://github.com/nautobot/nautobot/stargazers)
 - **Primary Domain**: Network Automation Platform & Dynamic Network Source of Truth.
 - **License**: Apache 2.0 | **Tech Stack**: Python, Django, Celery, PostgreSQL.
 - **Key Capabilities**: Network automation engine designed around a graph-like configuration schema. Supports custom data models without altering core tables, Git-as-a-data-source integration, native GraphQL query endpoints, and Celery job execution for network reconciliation.
 
-### 8. [iTop](https://github.com/Combodo/iTop) [![GitHub stars](https://img.shields.io/github/stars/Combodo/iTop?style=social&color=white)](https://github.com/Combodo/iTop/stargazers)
+### 8. [iTop](https://github.com/Combodo/iTop) [![GitHub_Stars](https://img.shields.io/github/stars/Combodo/iTop?style=social&color=white)](https://github.com/Combodo/iTop/stargazers)
 - **Primary Domain**: ITIL-Compliant CMDB & Service Management.
 - **License**: AGPL-3.0 | **Tech Stack**: PHP, MySQL, GraphViz.
 - **Key Capabilities**: Web-based IT service management solution engineered specifically around ITIL best practices. Features an adaptable CMDB tracking servers, clusters, storage arrays, telecom links, contacts, and customer contracts, with automated visual impact analysis rendered via GraphViz.
 
-### 9. [Open-CMDB](https://github.com/open-cmdb/cmdb) [![GitHub stars](https://img.shields.io/github/stars/open-cmdb/cmdb?style=social&color=white)](https://github.com/open-cmdb/cmdb/stargazers)
+### 9. [Open-CMDB](https://github.com/open-cmdb/cmdb) [![GitHub_Stars](https://img.shields.io/github/stars/open-cmdb/cmdb?style=social&color=white)](https://github.com/open-cmdb/cmdb/stargazers)
 - **Primary Domain**: Lightweight Asset & Configuration Management.
 - **License**: MIT | **Tech Stack**: Python, Django.
 - **Key Capabilities**: Developer-friendly CMDB offering flexible custom CI models, host discovery hooks, IP address cataloging, and clean REST interfaces for seamless embedding into internal DevOps portals.
 
-### 10. [RackTables](https://github.com/racktables/racktables) [![GitHub stars](https://img.shields.io/github/stars/racktables/racktables?style=social&color=white)](https://github.com/racktables/racktables/stargazers)
+### 10. [RackTables](https://github.com/racktables/racktables) [![GitHub_Stars](https://img.shields.io/github/stars/racktables/racktables?style=social&color=white)](https://github.com/racktables/racktables/stargazers)
 - **Primary Domain**: Physical Datacenter & Rack Asset Management.
 - **License**: GPL-2.0 | **Tech Stack**: PHP, MySQL.
 - **Key Capabilities**: Focuses on physical data center infrastructure management: tracking cabinet space, 42U rack layouts, patch cables, 802.1Q network VLANs, and hardware configurations with an intuitive visual interface.
 
-### 11. [Atlas CMDB](https://github.com/mojoaar/atlascmdb) [![GitHub stars](https://img.shields.io/github/stars/mojoaar/atlascmdb?style=social&color=white)](https://github.com/mojoaar/atlascmdb/stargazers)
+### 11. [Atlas CMDB](https://github.com/mojoaar/atlascmdb) [![GitHub_Stars](https://img.shields.io/github/stars/mojoaar/atlascmdb?style=social&color=white)](https://github.com/mojoaar/atlascmdb/stargazers)
 - **Primary Domain**: Modern Next.js Fullstack CMDB.
 - **License**: MIT | **Tech Stack**: Next.js 14, React, TypeScript, SQLite/PostgreSQL, Tailwind CSS.
 - **Key Capabilities**: Modern self-hosted CMDB with interactive relationship graphs (BFS depth control 1–6 hops with Dagre auto-layout), visual rack management (42U/48U front/back), Leaflet geographic maps, CSV import/export with conflict resolution, and enterprise OIDC / SCIM 2.0 authentication.
@@ -189,7 +189,7 @@ We welcome additions, corrections, and improvements from IT engineers, CMDB arch
    ```
 3. **Add or edit entries in `README.md`** following the established format:
    - SaaS platforms: include verified starting pricing, free tier limits, company revenue/valuation, and key capabilities.
-   - Open-source projects: ensure you add the GitHub stars social badge and sort descending by star count.
+   - Open-source projects: ensure you add the GitHub_Stars social badge and sort descending by Stars_Count.
 4. **Validate formatting**: Ensure all markdown tables render cleanly and URLs are functional.
 5. **Submit a Pull Request (PR)** with a concise summary of the changes made.
 
