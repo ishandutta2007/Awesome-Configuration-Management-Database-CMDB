@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 280" width="100%" height="280">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d" />
+      <stop offset="50%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="badgeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="nodeGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.6"/>
+    </pattern>
+
+    <style>
+      .dash-flow {
+        stroke-dasharray: 6, 8;
+        animation: flowAnimation 20s linear infinite;
+      }
+      .dash-flow-rev {
+        stroke-dasharray: 5, 7;
+        animation: flowAnimationRev 15s linear infinite;
+      }
+      .pulsing-node {
+        animation: pulseAnimation 3s ease-in-out infinite alternate;
+      }
+      .pulsing-node-delay {
+        animation: pulseAnimation 3s ease-in-out infinite alternate 1.5s;
+      }
+      .glow-orbit {
+        animation: rotateOrbit 25s linear infinite;
+        transform-origin: 740px 140px;
+      }
+      @keyframes flowAnimation {
+        from { stroke-dashoffset: 200; }
+        to { stroke-dashoffset: 0; }
+      }
+      @keyframes flowAnimationRev {
+        from { stroke-dashoffset: 0; }
+        to { stroke-dashoffset: 200; }
+      }
+      @keyframes pulseAnimation {
+        0% { transform: scale(0.95); opacity: 0.6; }
+        100% { transform: scale(1.15); opacity: 1; filter: drop-shadow(0 0 8px #38bdf8); }
+      }
+      @keyframes rotateOrbit {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+      }
+      .title-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 800;
+        font-size: 34px;
+        letter-spacing: -0.5px;
+      }
+      .sub-text {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        fill: #94a3b8;
+      }
+      .badge-label {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-weight: 600;
+        font-size: 11px;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="850" height="280" rx="16" fill="url(#bgGrad)" />
+  <rect width="850" height="280" rx="16" fill="url(#grid)" />
+
+  <!-- Ambient Light Orbs -->
+  <circle cx="120" cy="50" r="160" fill="#38bdf8" opacity="0.07" filter="url(#glow)"/>
+  <circle cx="760" cy="220" r="140" fill="#a855f7" opacity="0.08" filter="url(#glow)"/>
+  <circle cx="740" cy="140" r="90" fill="#6366f1" opacity="0.12" filter="url(#glow)"/>
+
+  <!-- Background Dynamic Network Graph / CI Topology -->
+  <g opacity="0.45">
+    <!-- Connecting Topology Lines -->
+    <path d="M 640 60 L 740 140 L 790 70" stroke="#38bdf8" stroke-width="1.8" fill="none" class="dash-flow" />
+    <path d="M 740 140 L 810 210" stroke="#818cf8" stroke-width="1.5" fill="none" class="dash-flow-rev" />
+    <path d="M 650 220 L 740 140" stroke="#c084fc" stroke-width="1.5" fill="none" class="dash-flow" />
+    <path d="M 520 140 L 640 60" stroke="#0ea5e9" stroke-width="1.2" stroke-dasharray="4,4" fill="none"/>
+    <path d="M 520 140 L 650 220" stroke="#6366f1" stroke-width="1.2" stroke-dasharray="4,4" fill="none"/>
+
+    <!-- Dynamic Topology Nodes (CI Items) -->
+    <!-- Central Hub -->
+    <circle cx="740" cy="140" r="14" fill="#0f172a" stroke="#818cf8" stroke-width="3" filter="url(#nodeGlow)"/>
+    <circle cx="740" cy="140" r="6" fill="#38bdf8" class="pulsing-node"/>
+
+    <!-- Surrounding CI Nodes -->
+    <circle cx="640" cy="60" r="9" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="640" cy="60" r="4" fill="#38bdf8" class="pulsing-node-delay"/>
+
+    <circle cx="790" cy="70" r="8" fill="#0f172a" stroke="#c084fc" stroke-width="2"/>
+    <circle cx="790" cy="70" r="3.5" fill="#c084fc"/>
+
+    <circle cx="810" cy="210" r="8" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <circle cx="810" cy="210" r="3.5" fill="#38bdf8" class="pulsing-node"/>
+
+    <circle cx="650" cy="220" r="9" fill="#0f172a" stroke="#818cf8" stroke-width="2"/>
+    <circle cx="650" cy="220" r="4" fill="#818cf8" class="pulsing-node-delay"/>
+
+    <circle cx="520" cy="140" r="7" fill="#0f172a" stroke="#0ea5e9" stroke-width="1.5"/>
+    <circle cx="520" cy="140" r="3" fill="#0ea5e9"/>
+
+    <!-- Orbital dynamic point -->
+    <g class="glow-orbit">
+      <circle cx="740" cy="80" r="3" fill="#38bdf8" filter="url(#nodeGlow)"/>
+    </g>
+  </g>
+
+  <!-- Foreground Content: Header Badge -->
+  <g transform="translate(48, 38)">
+    <rect width="186" height="26" rx="13" fill="url(#badgeGrad)" stroke="#334155" stroke-width="1"/>
+    <circle cx="14" cy="13" r="4" fill="#10b981" filter="url(#nodeGlow)"/>
+    <text x="26" y="17" fill="#cbd5e1" class="badge-label">ENTERPRISE ITOM &amp; CMDB</text>
+  </g>
+
+  <!-- Foreground Content: Main Title and Subtitle -->
+  <g transform="translate(48, 102)">
+    <!-- Main Title -->
+    <text x="0" y="0" fill="url(#textGrad)" class="title-text" filter="url(#glow)">Awesome CMDB Ecosystem</text>
+    <text x="0" y="0" fill="url(#textGrad)" class="title-text">Awesome CMDB Ecosystem</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="32" class="sub-text">A Curated Directory of Configuration Management Databases, IT Asset Inventory</text>
+    <text x="0" y="52" class="sub-text">&amp; Automated Infrastructure Dependency Mapping Platforms</text>
+  </g>
+
+  <!-- Interactive Tags / Feature Badges -->
+  <g transform="translate(48, 206)">
+    <!-- Badge 1: ITIL v4 -->
+    <g transform="translate(0, 0)">
+      <rect width="102" height="30" rx="8" fill="#1e293b" stroke="#3b82f6" stroke-width="1" fill-opacity="0.8"/>
+      <text x="14" y="19" fill="#93c5fd" class="badge-label">⚡ ITIL v4 Ready</text>
+    </g>
+
+    <!-- Badge 2: Dependency Mapping -->
+    <g transform="translate(112, 0)">
+      <rect width="158" height="30" rx="8" fill="#1e293b" stroke="#8b5cf6" stroke-width="1" fill-opacity="0.8"/>
+      <text x="14" y="19" fill="#c4b5fd" class="badge-label">🕸️ Dependency Graphing</text>
+    </g>
+
+    <!-- Badge 3: Multi-Source Reconciliation -->
+    <g transform="translate(280, 0)">
+      <rect width="180" height="30" rx="8" fill="#1e293b" stroke="#06b6d4" stroke-width="1" fill-opacity="0.8"/>
+      <text x="14" y="19" fill="#67e8f9" class="badge-label">🔄 Multi-Source Sync (IRE)</text>
+    </g>
+
+    <!-- Badge 4: Open Source -->
+    <g transform="translate(470, 0)">
+      <rect width="144" height="30" rx="8" fill="#1e293b" stroke="#10b981" stroke-width="1" fill-opacity="0.8"/>
+      <text x="14" y="19" fill="#6ee7b7" class="badge-label">🔓 Sovereign &amp; OSS</text>
+    </g>
+  </g>
+
+  <!-- Outer Frame Border -->
+  <rect x="0.5" y="0.5" width="849" height="279" rx="16" fill="none" stroke="#334155" stroke-opacity="0.6"/>
+</svg>
